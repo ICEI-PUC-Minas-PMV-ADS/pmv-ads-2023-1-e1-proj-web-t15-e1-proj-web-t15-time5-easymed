@@ -4,7 +4,7 @@ A definição do problema em questão e os pontos principais tratados no projeto
 
 ## Personas
 
-Cassio Andrade
+## Cassio Andrade
 
 Idade: 41 
 Ocupação: Vendedor de abacaxi 
@@ -34,7 +34,7 @@ Hobbies, História
 
 
 
-Vanessa Meirelles
+## Vanessa Meirelles
 
 Idade: 26 
 Ocupação: Médica recém-formada 
