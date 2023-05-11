@@ -1,35 +1,40 @@
 
 # Projeto de Interface
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
-
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
-
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
+No processo de montagem da interface do sistema existem vários pontos que precisaram ser levados em consideração, nesse caso a acessibilidade e capacidade de interação e uso por parte do usuário foi nosso foco, sendo assim o projeto não possui uma identidade visual padronizada entre as páginas, considerando o que o funcionamento do projeto deve ser adaptável, com funcionamento fluido tanto em desktops quanto dispositivos móveis.
 
 ## User Flow
 
-![Exemplo de UserFlow](img/userflow.jpg)
+O diagrama apresentado na figura 2, abaixo, retrata o possível fluxo de interação dos usuários pelas telas do sistema. As telas são retratadas de forma mais detalhada na seção de Wireframes que segue abaixo:
 
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
+Tela - Home-Page
 
-> **Links Úteis**:
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
+A tela de home-page tem como foco mostrar as principais informações sobre o projeto assim como cria o fluxo através do cabeçalho, tanto para o cadastro e login do usuário quanto outras páginas do projeto.
+O bloco da Barra superior traz três elementos distintos:
+· Componente de pesquisa que permite substituir o conteúdo da página com o resultado da busca solicitada pelo usuário;
+· Componente de lista de categorias que dá acesso às páginas de cada uma das seções disponibilizadas.
 
+Tela- Interações
+
+A tela de interações tem como objetivo funcionar como método de pesquisa, para identificação das possíveis interações medicamentosas apresentadas por um fármaco selecionado pelo usuário.
+· Componente de pesquisa que permite substituir o conteúdo da página com o resultado da busca solicitada pelo usuário;
+· Barra de pesquisa que permite selecionar o título desejado.
+
+Tela- Rotina
+
+A tela rotina tem como função criar uma rotina de uso de medicamentos de acordo com o que foi prescrito por um profissional de saúde, permitindo selecionar o dia, horário, número de fármacos e a quantidade.
+· Componente de pesquisa que permite substituir o conteúdo da página com o resultado da busca solicitada pelo usuário;
+· Encaminhamento para página de cadastro ou login caso usuário já tenha uma conta;
+· Componente em formato de calendário que permite a seleção de dia e mês desejado, assim como selecionar as medicações e posologias descritas para a data em questão.
+
+Tela - Órgãos de Saúde
+
+A tela de Órgãos de Saúde visa permitir que o usuário faça reclamações diretamente com as autoridades responsáveis por regular os profissionais de saúde passiveis de prescrever receitas contendo medicamentos, caso sejam identificadas irregularidades nas atividades de tais profissionais, a tela possui a barra superior que permite o usuário navegar entre as páginas do site e os contatos das entidades citadas acima.
 
 ## Wireframes
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+Conforme o fluxo apresentado no item acima, as telas presentes no sistema são demonstradas no decorrer deste capítulo. Tais telas apresentam uma estrutura comum que é apresentada na estrutura da figura 2. Esta estrutura é composta por 2 grandes blocos descritos a seguir. São eles:
 
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
- 
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+· Cabeçalho: Local onde são dispostos os elementos fixos de identidade (logo) e navegação principal do site (menu da aplicação);
+
+· Conteúdo: Apresenta os conteúdos disponíveis na tela e suas funcionalidades.
