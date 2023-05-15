@@ -1,15 +1,54 @@
 # Programação de Funcionalidades
+Nesta seção são apresentadas as telas desenvolvidas para cada uma das funcionalidadesdo sistema. O respectivo endereço (URL) e outras orientações de acesso são apresentadas na sequência.
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="5-Arquitetura da Solução.md"> Arquitetura da Solução</a>
+# Tela de Início
+Instrui o usuário sobre as funcionalidades do site e quais recursos serão dispostos para ele, permite também a navegação entre as demais páginas do sistema.Possuindo também uma barra de pesquisas de fármacos que retorna as nformações sobre o mesmo, indicando sua posologia comummente utilizada e suas interações farmacológicas. Contém também um disclaimer ao fim da página(rodapé).
 
-Implementação do sistema descritas por meio dos requisitos funcionais e/ou não funcionais. Deve relacionar os requisitos atendidos os artefatos criados (código fonte) além das estruturas de dados utilizadas e as instruções para acesso e verificação da implementação que deve estar funcional no ambiente de hospedagem.
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t15-e1-proj-web-t15-time5-easymed/assets/111026383/101cd9cf-a138-4e7d-88f6-476904021f1e)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t15-e1-proj-web-t15-time5-easymed/assets/111026383/883a3d58-e318-495b-9b7c-28d99a648ae6)
 
-Para cada requisito funcional, pode ser entregue um artefato desse tipo
+Requisitos atendidos:
 
-> **Links Úteis**:
->
-> - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
-> - [JSON Tutorial](https://www.w3resource.com/JSON)
-> - [JSON Data Set Sample](https://opensource.adobe.com/Spry/samples/data_region/JSONDataSetSample.html)
-> - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
-> - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
+RF-01 - O site deve apresentar na página principal indicações e conselhos sobre como montar uma rotina medicamentosa. 
+RF-03 - O site deve conter uma frase isentando o sistema de quaisquer responsabilidades por prescrição, pois ele não realizará, apenas a indicação de interações medicamentosas e organização de terapia medicamentosa (disclaimer).
+RF-04 - O site deve oferecer uma funcionalidade de filtro/pesquisa para permitir ao usuário localizar fármacos que serão informados na caixa de pesquisa.
+
+Artefatos da funcionalidade
+
+● index.html
+● style.css
+● medicacoes.jpg
+● EasyMedLogo.png
+
+Instruções de acesso:
+1. Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
+2. Descompacte o arquivo em uma pasta específica;
+3. Abra o Visual Studio Code e execute o Live Server;
+4. Abra um navegador de Internet e informe a seguinte URL: Em andamento
+
+
+# Tela Órgãos de Saúde
+Permite ao usuário o contato direto com as secretarias dos órgãos responsáveis pela regulamentação dos profissionais de saúde responsáveis pela prescrição de medicamentos, para denúncias ou reclamações.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t15-e1-proj-web-t15-time5-easymed/assets/111026383/6aaf5eba-fbaa-4cbb-b6b4-41972a1642aa)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t15-e1-proj-web-t15-time5-easymed/assets/111026383/ee9480bb-2955-47fd-95fc-54eabc4796b2)
+
+Requisitos atendidos:
+
+RF-06 - O site deve conter os números para contato e denúncia do CFF (Conselho Federal de Farmácia) e CFM (Conselho Federal de Medicina). 
+
+Artefatos da funcionalidade
+
+● Orgaos-de-Saude.html
+● style.css
+● LogoCFF.png
+● LogoCFM.png
+● EasyMedLogo.png
+
+Instruções de acesso:
+1. Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
+2. Descompacte o arquivo em uma pasta específica;
+3. Abra o Visual Studio Code e execute o Live Server;
+4. Abra um navegador de Internet e informe a seguinte URL: Em andamento
+
+
