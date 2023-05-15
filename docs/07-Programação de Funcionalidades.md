@@ -8,13 +8,11 @@ Instrui o usuário sobre as funcionalidades do site e quais recursos serão disp
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t15-e1-proj-web-t15-time5-easymed/assets/111026383/883a3d58-e318-495b-9b7c-28d99a648ae6)
 
 Requisitos atendidos:
-
 RF-01 - O site deve apresentar na página principal indicações e conselhos sobre como montar uma rotina medicamentosa. 
 RF-03 - O site deve conter uma frase isentando o sistema de quaisquer responsabilidades por prescrição, pois ele não realizará, apenas a indicação de interações medicamentosas e organização de terapia medicamentosa (disclaimer).
 RF-04 - O site deve oferecer uma funcionalidade de filtro/pesquisa para permitir ao usuário localizar fármacos que serão informados na caixa de pesquisa.
 
-Artefatos da funcionalidade
-
+Artefatos da funcionalidade:
 ● index.html
 ● style.css
 ● medicacoes.jpg
@@ -34,11 +32,9 @@ Permite ao usuário o contato direto com as secretarias dos órgãos responsáve
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t15-e1-proj-web-t15-time5-easymed/assets/111026383/ee9480bb-2955-47fd-95fc-54eabc4796b2)
 
 Requisitos atendidos:
-
 RF-06 - O site deve conter os números para contato e denúncia do CFF (Conselho Federal de Farmácia) e CFM (Conselho Federal de Medicina). 
 
-Artefatos da funcionalidade
-
+Artefatos da funcionalidade:
 ● Orgaos-de-Saude.html
 ● style.css
 ● LogoCFF.png
