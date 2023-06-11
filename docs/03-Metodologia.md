@@ -46,19 +46,23 @@ Bruno Sanchez
 Para organização e distribuição das tarefas do projeto, a equipe está utilizando o Trello estruturado com as seguintes listas:
 
 - Backlog:
+
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t15-e1-proj-web-t15-time5-easymed/assets/111026383/318abcf4-2dfc-4205-ae7e-13a081df16ec)
 
 - Sprint 1:
+
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t15-e1-proj-web-t15-time5-easymed/assets/111026383/7176a172-3dce-4bb4-8a0f-d85e034d32e5)
 
 Planejamento: Nessa Sprint planejamos efetuar a especificação dos requisitos funcionais e apresentação do projeto e sua documentação de contexto.
 
-- Sprint 2
+- Sprint 2:
+
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t15-e1-proj-web-t15-time5-easymed/assets/111026383/bd378ba8-6abd-4fe2-b133-6dcbce447c1e)
 
 Planejamento: A sprint baseou-se nas definições da metodologia e definição das páginas principais do site.
 
-- Sprint 3
+- Sprint 3:
+
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t15-e1-proj-web-t15-time5-easymed/assets/111026383/b57b84aa-d4d1-41f0-b7ca-8d3a16af17d4)
  
  Planejamento: Criação das páginas Index, Orgaos de Saude e Login/Cadastro
