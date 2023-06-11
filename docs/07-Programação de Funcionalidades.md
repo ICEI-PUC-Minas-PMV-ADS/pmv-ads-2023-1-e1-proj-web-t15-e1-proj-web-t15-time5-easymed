@@ -12,6 +12,8 @@ RF-01 - O site deve apresentar na página principal indicações e conselhos sob
 RF-03 - O site deve conter uma frase isentando o sistema de quaisquer responsabilidades por prescrição, pois ele não realizará, apenas a indicação de interações medicamentosas e organização de terapia medicamentosa (disclaimer).
 RF-04 - O site deve oferecer uma funcionalidade de filtro/pesquisa para permitir ao usuário localizar fármacos que serão informados na caixa de pesquisa.
 
+Responsáveis: Bruno Alves da Fonseca, Pedro Henrique Corrêa
+
 Artefatos da funcionalidade:
 ● index.html
 ● style.css
@@ -40,6 +42,8 @@ Artefatos da funcionalidade:
 ● LogoCFF.png
 ● LogoCFM.png
 ● EasyMedLogo.png
+
+Responsáveis: Lucas Oliveira 
 
 Instruções de acesso:
 1. Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
