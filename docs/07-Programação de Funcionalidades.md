@@ -15,12 +15,18 @@ RF-04 - O site deve oferecer uma funcionalidade de filtro/pesquisa para permitir
 Responsáveis: Bruno Alves da Fonseca, Pedro Henrique Corrêa
 
 Artefatos da funcionalidade:
+
 ● index.html
+
 ● style.css
+
 ● medicacoes.jpg
+
 ● EasyMedLogo.png
 
+
 Instruções de acesso:
+
 1. Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
 2. Descompacte o arquivo em uma pasta específica;
 3. Abra o Visual Studio Code e execute o Live Server;
@@ -28,19 +34,26 @@ Instruções de acesso:
 
 
 # Tela Órgãos de Saúde
+
 Permite ao usuário o contato direto com as secretarias dos órgãos responsáveis pela regulamentação dos profissionais de saúde responsáveis pela prescrição de medicamentos, para denúncias ou reclamações.
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t15-e1-proj-web-t15-time5-easymed/assets/111026383/6aaf5eba-fbaa-4cbb-b6b4-41972a1642aa)
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t15-e1-proj-web-t15-time5-easymed/assets/111026383/ee9480bb-2955-47fd-95fc-54eabc4796b2)
 
 Requisitos atendidos:
+
 RF-06 - O site deve conter os números para contato e denúncia do CFF (Conselho Federal de Farmácia) e CFM (Conselho Federal de Medicina). 
 
 Artefatos da funcionalidade:
+
 ● Orgaos-de-Saude.html
+
 ● style.css
+
 ● LogoCFF.png
+
 ● LogoCFM.png
+
 ● EasyMedLogo.png
 
 Responsáveis: Lucas Oliveira 
