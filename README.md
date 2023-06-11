@@ -1,12 +1,12 @@
 # TÍTULO DO PROJETO
 
-`CURSO`
+`Análise e Desenvolvimento de Sistemas`
 
-`DISCIPLINA`
+`Eixo 1 - Projeto: Desenvolvimento de Aplicação Web Front-End`
 
-`SEMESTRE`
+`Primeiro Semestre`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O EasyMed é um sistema de gerenciamento de Rotina Medicamentosa, que busca permitir a pacientes e médicos um maior controle de prescriçäo e posologia para tratamentos medicamentosos, tendo como diferencial a indicaçäo da presença de interaões de importância clínica.
 
 ## Integrantes
 
@@ -21,7 +21,10 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+1 - Clonar repositório utilizando a pasta zipada (download em:https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t15-e1-proj-web-t15-time5-easymed.git) ou utilizando o Visual Studio Code
+2 - Executar a solução
+3 - Realizar o login/Cadastro
+
 
 # Documentação
 
@@ -45,7 +48,7 @@ Assim que a primeira versão do sistema estiver disponível, deverá complementa
 
 # Armazenamento do Código-Fonte
 
-* <a href="src/README.md">Código Fonte</a>
+* [<a href="src/README.md">Código Fonte</a>](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t15-e1-proj-web-t15-time5-easymed.git)
 
 # Armazenamento da Apresentação
 
