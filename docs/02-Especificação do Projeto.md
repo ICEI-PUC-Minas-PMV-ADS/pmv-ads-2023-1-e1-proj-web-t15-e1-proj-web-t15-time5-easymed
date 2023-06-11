@@ -20,16 +20,20 @@ com menos efeitos
 
 colaterais.
 
+
 ● Falta de confiança na
 
 prescrição médica.
 
 
 Frustrações 
+
 ● Ausência de resultados positivos em seu tratamento. 
 
 Hobbies, História 
+
 ● Frequentar Igreja e cultos religiosos. 
+
 ● Comer em fast food.
 
 
@@ -45,9 +49,11 @@ Motivações
 ● Procurar informações que ajudem nos processos de anamnese e prescrição.
 
 Frustrações 
+
 ● Erros de prescrição para alguns pacientes atendidos por ela. 
 
 Hobbies, História 
+
 ● Adora sua profissão e procura sempre agir com excelência e descobrir informações que a ajudem a desenvolver melhor seu papel.
 
 
