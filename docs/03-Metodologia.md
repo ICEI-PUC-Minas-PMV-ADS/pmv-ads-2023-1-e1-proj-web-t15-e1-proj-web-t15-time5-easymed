@@ -34,13 +34,11 @@ etiquetas:
 
 ⦁ Product Owner: Pedro Henrique Corrêa
 
-⦁ Equipe de Desenvolvimento:
+⦁ Equipe de Desenvolvimento: Bruno Alves da Fonseca
 
-Bruno Alves da Fonseca
+⦁ Equipe de Design: Bruno Sanchez
 
-⦁ Equipe de Design:
 
-Bruno Sanchez
 
 ### Processo
 Para organização e distribuição das tarefas do projeto, a equipe está utilizando o Trello estruturado com as seguintes listas:
