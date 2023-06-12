@@ -21,3 +21,14 @@ iconClose.addEventListener('click', ()=> {
 });
 
 
+// Cadastro do usuario e criacao da conta - EM PROGRESSO 
+const emailInput = loginForm.querySelector('input[type="email"]');
+    const passwordInput = loginForm.querySelector('input[type="password"]');
+    const emailValue = emailInput.value;
+    const passwordValue = passwordInput.value;
+const loginData = {
+      email: emailValue,
+      password: passwordValue
+    };
+const jsonData = JSON.stringify(loginData);
+const loginForm = document.querySelector('.form-box.login form');
