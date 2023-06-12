@@ -10,7 +10,7 @@ Idade: 41
 Ocupação: Vendedor de abacaxi 
 Caso Clínico: Apresenta um caso de diabetes e hipertensão, faz uso dos medicamentos “A” e “E”.
 
-Motivações
+### Motivações
 
 ● Procura de uma
 
@@ -20,16 +20,20 @@ com menos efeitos
 
 colaterais.
 
+
 ● Falta de confiança na
 
 prescrição médica.
 
 
-Frustrações 
+### Frustrações 
+
 ● Ausência de resultados positivos em seu tratamento. 
 
 Hobbies, História 
+
 ● Frequentar Igreja e cultos religiosos. 
+
 ● Comer em fast food.
 
 
@@ -40,14 +44,16 @@ Idade: 26
 Ocupação: Médica recém-formada 
 Caso: A procura de conhecer mais sobre as interações farmacológicas dos medicamentos que prescreve, de forma a prover melhor assistência aos seus pacientes.
 
-Motivações
+### Motivações
 
 ● Procurar informações que ajudem nos processos de anamnese e prescrição.
 
-Frustrações 
+### Frustrações 
+
 ● Erros de prescrição para alguns pacientes atendidos por ela. 
 
 Hobbies, História 
+
 ● Adora sua profissão e procura sempre agir com excelência e descobrir informações que a ajudem a desenvolver melhor seu papel.
 
 
