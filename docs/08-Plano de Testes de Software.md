@@ -19,7 +19,5 @@
 
 ## Teste da criação de Rotina Medicamentosa (PÁGINA AINDA INCOMPLETA!) (CT-04)
 ### Objetivo do Teste:
-- Digitar um medicamento na barra de pesquisa
-- Direcionar o usuário para a página de Interações
-- Apresentar as informações sobre o medicamento pesquisado
+
 
