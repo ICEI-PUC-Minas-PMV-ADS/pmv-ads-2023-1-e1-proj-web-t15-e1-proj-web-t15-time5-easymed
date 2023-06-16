@@ -254,3 +254,22 @@ header {
     text-decoration: underline;
 }
 
+.iconeye {
+position: absolute;
+top: 13px;
+right: 40px;
+cursor: pointer;
+}
+
+.iconeye2 {
+    position: absolute;
+    top: 13px;
+    right: 40px;
+    cursor: pointer;
+}
+
+
+
+
+
+    
