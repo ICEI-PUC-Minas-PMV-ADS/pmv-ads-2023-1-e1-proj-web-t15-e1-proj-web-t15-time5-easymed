@@ -130,9 +130,27 @@ h1 {
   text-align: center;
 }
 
-.text-box {
-  width: 18.75rem;
-  height: 9.375rem; 
-  border: 0.0625rem solid #ccc; 
-  padding: 0.625rem;
+.section {
+  padding: 1.25rem;
 }
+
+.section-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 0.625rem;
+}
+
+.section-text {
+  font-size: 0.875rem;
+  margin-bottom: 1.25rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttons button {
+  margin-left: 0.625rem;
+}
+
