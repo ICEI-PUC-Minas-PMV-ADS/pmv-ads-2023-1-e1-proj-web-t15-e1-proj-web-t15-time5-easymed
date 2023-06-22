@@ -168,5 +168,30 @@ h1 {
   color: white;
 }
 
+.conteudo-secundário h3{
+margin-bottom: 1.25rem;
+}
+
+.conteudo-secundário p{
+  margin-bottom: 1rem;
+}
+
+.divider2 {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+
+.rodape {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-top: 0.0625rem solid rgb(9, 109, 96);
+  font-family: 'Sarala', sans-serif;
+  font-weight: 300;
+  font-size: 0.925rem;
+  align-items: center;
+}
+
 
 
