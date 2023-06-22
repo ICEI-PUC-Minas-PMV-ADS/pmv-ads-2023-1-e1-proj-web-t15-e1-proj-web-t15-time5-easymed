@@ -131,7 +131,7 @@ h1 {
 }
 
 .section {
-  padding: 1.25rem;
+  padding: 2.5rem;
 }
 
 .section-title {
@@ -147,10 +147,26 @@ h1 {
 
 .buttons {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .buttons button {
-  margin-left: 0.625rem;
+  margin: 0 1.625rem;
+  padding: 0.2375rem 2.2rem;
+  font-size: 0.925rem;
+  border-radius: 0.5rem;
 }
+
+
+.cancel-button {
+  background-color: blue;
+  color: white;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+}
+
+
 
