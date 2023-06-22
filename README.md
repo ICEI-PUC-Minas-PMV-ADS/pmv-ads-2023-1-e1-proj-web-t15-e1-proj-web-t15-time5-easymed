@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# EasyMed
 
 `Análise e Desenvolvimento de Sistemas`
 
