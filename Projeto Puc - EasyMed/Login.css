@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,12 +14,23 @@ body {
     min-height: 100vh;
 }
 
+/* Mensagem de registro e login */
+#message {
+    background-color: #fff;
+    color: #87D6CC;
+    font-family: 'Sarala', sans-serif;
+    font-size: 1.875rem;
+    text-align: center;
+    padding: 5rem;
+}
+
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    height: 10%;
+    padding: 2rem 10rem;
     background: #87D6CC;
     display: flex;
     justify-content: space-between;
@@ -28,47 +39,47 @@ header {
 }
  
 .logo {
-    font-size: 2em;
+    font-size: 2rem;
     color: white;
     user-select: none;
 }
 
 .navigation a {
     position: relative;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     color: white;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 40px;
+    margin-left: 2.5rem;
 }
 
 .navigation .btnLogin-popup {
-    width: 130px;
-    height: 50px;
+    width: 8.125rem;
+    height: 3.125rem;
     background: transparent;
-    border: 2px solid white;
+    border: 0.125rem solid white;
     outline: none;
-    border-radius: 6px;
+    border-radius: 0.375rem;
     cursor: pointer;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     color: white;
     font-weight: 500;
-    margin-left: 40px;
-    transition: 5s;
+    margin-left: 2.5rem;
+    transition: 0.5s;
 }
 
 .navigation a::after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -6px;
+    bottom: -0.375rem;
     width: 100%;
-    height: 3px;
+    height: 0.1875rem;
     background: white;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     transform-origin: right;
     transform: scaleX(0);
-    transition: transform .5s;
+    transition: transform 0.5s;
 }
 
 .navigation a:hover::after {
@@ -84,74 +95,74 @@ header {
 
 .wrapper {
     position: relative;
-    width: 400px;
-    height: 440px;
+    width: 25rem;
+    height: 27.5rem;
     background: transparent;
-    border: 2px solid rgba(255, 255, 255, .5);
-    border-radius: 20px;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    border: 0.125rem solid rgba(255, 255, 255, .5);
+    border-radius: 1.25rem;
+    backdrop-filter: blur(0.625rem);
+    box-shadow: 0 0 1.875rem rgba(0, 0, 0, .5);
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     transform: scale(0);
-    transition: transform .5s ease, height .2s ease;
+    transition: transform 0.5s ease, height 0.2s ease;
 }
 
 .wrapper.active-popup {
     transform: scale(1);
-
 }
 
 .wrapper.active {
-    height: 520px;
+    height: 32.5rem;
 }
 
 .wrapper .form-box {
     width: 100%;
-    padding: 40px;
+    padding: 2.5rem;
 }
 
 .wrapper .form-box.login {
-    transition: transform .18s ease;
+    transition: transform 0.18s ease;
     transform: translateX(0);
 }
 
 .wrapper.active .form-box.login {
     transition: none;
-    transform: translateX(-400px);
+    transform: translateX(-25rem);
 }
 
 .wrapper .form-box.register {
     position: absolute;
     transition: none;
-    transform:  translateX(400px);
+    transform: translateX(25rem);
 }
 
 .wrapper.active .form-box.register {
-    transition: transform .18s ease;
+    transition: transform 0.18s ease;
     transform: translateX(0);
 }
+
 .wrapper .icon-close {
     position: absolute;
     top: 0;
     right: 0;
-    width: 45px;
-    height: 45px;
+    width: 2.8125rem;
+    height: 2.8125rem;
     background: #87D6CC;
-    font-size: 2em;
+    font-size: 2rem;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom-left-radius: 20px;
+    border-bottom-left-radius: 1.25rem;
     cursor: pointer;
     z-index: 1;
 }
 
 .form-box h2 {
-    font-size: 2em;
+    font-size: 2rem;
     color: #162938;
     text-align: center;
 }
@@ -159,24 +170,24 @@ header {
 .input-box {
     position: relative;
     width: 100%;
-    height: 50px;
-    border-bottom:  2px solid #162938;
-    margin:  30px 0;
+    height: 3.125rem;
+    border-bottom: 0.125rem solid #162938;
+    margin: 1.875rem 0;
 }
 .input-box label {
     position: absolute;
     top: 50%;
-    left: 5px;
+    left: 0.3125rem;
     transform: translateY(-50%);
-    font-size: 1em;
+    font-size: 1rem;
     color: #162938;
     pointer-events: none;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .input-box input:focus~label,
 .input-box input:valid~label {
-    top: -5px;
+    top: -0.3125rem;
 }
 
 .input-box input {
@@ -185,63 +196,62 @@ header {
     background: transparent;
     border: none;
     outline: none;
-    font-size: 1em;
+    font-size: 1rem;
     color: #162938;
     font-weight: 600;
-    padding: 0 35px 0 5px;
+    padding: 0 2.1875rem 0 0.3125rem;
 }
 
-.input-box .icon{
+.input-box .icon {
     position: absolute;
-    right: 8px;
-    font-size: 1.2em;
+    right: 0.5rem;
+    font-size: 1.2rem;
     color: #162938;
-    line-height: 57px;
+    line-height: 3.5625rem;
 }
 
-.remenber-forgot {
-    font-size: .9em;
+.remember-forgot {
+    font-size: 0.9rem;
     color: #162938;
     font-weight: 500;
-    margin: -15px 0 15px;
+    margin: -0.9375rem 0 1.875rem;
     display: flex;
     justify-content: space-between;
 }
 
-.remenber-forgot label input {
+.remember-forgot label input {
     accent-color: #162938;
-    margin-right: 3px;
+    margin-right: 0.1875rem;
 }
 
-.remenber-forgot a {
+.remember-forgot a {
     color: #162938;
     text-decoration: none;
 }
 
-.remenber-forgot a:hover {
+.remember-forgot a:hover {
     text-decoration: underline;
 }
 
 .btn {
     width: 100%;
-    height: 45px;
+    height: 2.8125rem;
     background: #87D6CC;
     border: none;
     outline: none;
-    border-radius: 6px;
+    border-radius: 0.375rem;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1rem;
     color: #fff;
     font-weight: 500;
 }
 
 .login-register {
-    font-size: .9em;
+    font-size: 0.9rem;
     color: #162938;
     text-align: center;
     font-weight: 500;
-    margin: 25px 0 10px; 
-
+    margin: 1.5625rem 0 0.625rem; 
 }
 
 .login-register p a {
@@ -254,22 +264,16 @@ header {
     text-decoration: underline;
 }
 
-.iconeye {
-position: absolute;
-top: 13px;
-right: 40px;
-cursor: pointer;
-}
-
-.iconeye2 {
+.icon-eye {
     position: absolute;
-    top: 13px;
-    right: 40px;
+    top: 0.8125rem;
+    right: 2.5rem;
     cursor: pointer;
 }
 
-
-
-
-
-    
+.icon-eye2 {
+    position: absolute;
+    top: 0.8125rem;
+    right: 2.5rem;
+    cursor: pointer;
+}

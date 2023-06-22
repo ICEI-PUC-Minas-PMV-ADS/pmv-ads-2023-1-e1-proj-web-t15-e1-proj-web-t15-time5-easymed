@@ -1,13 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Sarala', sans-serif;
+}
 
+html {
+  font-size:100%;
+  font-family: 'Sarala', sans-serif;
 }
 
 body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,72 +28,170 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 100px;
+  height: 10%;
+  padding: 2rem 10rem;
   background: #87D6CC;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 99;
-  
 }
 
 .logo {
-  font-size: 2em;
+  font-size: 2rem;
   color: white;
   user-select: none;
-
 }
 
 .navigation a {
   position: relative;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   color: white;
   text-decoration: none;
   font-weight: 500;
-  margin-left: 40px;
-
+  margin-left: 4rem;
 }
 
 .navigation .btnLogin-popup {
-  width: 130px;
-  height: 50px;
+  width: 9rem;
+  height: 3rem;
   background: transparent;
-  border: 2px solid white;
+  border: 0.2rem solid white;
   outline: none;
-  border-radius: 6px;
+  border-radius: 0.6rem;
   cursor: pointer;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   color: white;
   font-weight: 500;
-  margin-left: 40px;
-  transition: 5s;
-
+  margin-left: 4rem;
+  transition: 0.5s;
 }
 
 .navigation a::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -6px;
+  bottom: -0.6rem;
   width: 100%;
-  height: 3px;
+  height: 0.3rem;
   background: white;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   transform-origin: right;
   transform: scaleX(0);
-  transition: transform .5s;
-
+  transition: transform 0.5s;
 }
 
 .navigation a:hover::after {
   transform-origin: left;
-  transform: scaleX(1);   
-
+  transform: scaleX(1);
 }
-   
 
 .navigation .btnLogin-popup:hover {
   background: white;
-  color: #87D6CC
-
+  color: #87D6CC;
 }
+
+h1 {
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+}
+
+.divider {
+  width: 0.0625rem;
+  height: 18.75rem;
+  background-color: black;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 3.125rem;
+}
+
+.profile img {
+  width: 6.25rem;
+  height: 6.25rem;
+  border-radius: 50%;
+}
+
+.profile h2 {
+  margin-top: 0.625rem;
+  margin-bottom: 0.3125rem;
+}
+
+.profile .info {
+  text-align: center;
+}
+
+.section {
+  padding: 2.5rem;
+}
+
+.section-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 0.625rem;
+}
+
+.section-text {
+  font-size: 0.875rem;
+  margin-bottom: 1.25rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons button {
+  margin: 0 1.625rem;
+  padding: 0.2375rem 2.2rem;
+  font-size: 0.925rem;
+  border-radius: 0.5rem;
+}
+
+
+.cancel-button {
+  background-color: blue;
+  color: white;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+}
+
+.conteudo-secundário h3{
+margin-bottom: 1.25rem;
+}
+
+.conteudo-secundário p{
+  margin-bottom: 1rem;
+}
+
+.divider2 {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+
+.rodape {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-top: 0.0625rem solid rgb(9, 109, 96);
+  font-family: 'Sarala', sans-serif;
+  font-weight: 300;
+  font-size: 0.925rem;
+  align-items: center;
+}
+
+
+
