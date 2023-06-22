@@ -23,7 +23,6 @@ body {
 }
 
 header {
-<<<<<<< HEAD
     position: fixed;
     top: 0;
     left: 0;
@@ -36,20 +35,6 @@ header {
     z-index: 99;
     margin-bottom: 50px;
   }
-=======
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 10%;
-  padding: 2rem 10rem;
-  background: #87D6CC;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 99;
-}
->>>>>>> d5868ea55a2aa6fe42238f03842da34bc0d63477
   
   .logo {
     font-size: 2em;
