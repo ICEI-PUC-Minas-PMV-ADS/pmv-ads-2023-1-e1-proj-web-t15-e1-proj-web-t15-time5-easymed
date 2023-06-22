@@ -14,6 +14,16 @@ body {
     min-height: 100vh;
 }
 
+/* Mensagem de registro e login */
+#message {
+    background-color: #fff;
+    color: #87D6CC;
+    font-family: 'Sarala', sans-serif;
+    font-size: 1.875rem;
+    text-align: center;
+    padding: 5rem;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -26,7 +36,7 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 99;
-  }
+}
  
 .logo {
     font-size: 2rem;
