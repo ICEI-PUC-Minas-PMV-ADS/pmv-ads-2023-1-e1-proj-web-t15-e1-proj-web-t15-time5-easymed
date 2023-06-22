@@ -124,13 +124,15 @@ header {
 }
 
 .conteudo{
-  margin-bottom: 48px;
+  margin-top: 60px;
+  margin-bottom: 100px;
   border-top: 1px solid white;
+
 }
 
 .conteudo-principal{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding:50px;
@@ -147,30 +149,41 @@ header {
   align-items: center;
 }
 
-#divBusca{
+.divBusca{
   background-color:#E0EEEE;
-  border:solid 2px #5F9EA0;
+  border:solid 1px #87D6CC;
   border-radius:10px;
-  width:250px;
-  height:33px;
+  
 }
 
-#txtBusca{
+.txtBusca{
   float:left;
   background-color:transparent;
   border-radius: 10px;
-  padding-left:5px; 
   font-size:15px;
   border:none;
   height:32px;
-  width:248px;
+  width: 320px;
+  align-items: center;
 }
 
-#btnBusca{
+.btn-busca{
   border:none;
   height:32px;
   border-radius:10px;
-  width:250px;
+  width: 100px;
   font-weight:bold;
-  background:#5F9EA0;
+  background-color: #87D6CC;
+  font-style: italic;
+  text-align: center;
+  color: aliceblue;
+}
+
+.img-medicamentos {
+ height: 25rem;
+ display: flex;
+ margin-bottom: 50px;
+ margin-top: 25px;
+ align-items: center;
+ padding-left: 80px;
 }
