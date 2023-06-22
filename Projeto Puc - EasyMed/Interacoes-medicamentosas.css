@@ -120,17 +120,9 @@ header {
   align-items: center;
 }
 
-<<<<<<< HEAD
-.conteudo{
-  margin-top: 60px;
-  margin-bottom: 100px;
-  border-top: 1px solid white;
-
-=======
 .conteudo {
   margin-bottom: 3rem;
   border-top: 0.0625rem solid white;
->>>>>>> d5868ea55a2aa6fe42238f03842da34bc0d63477
 }
 
 .conteudo-principal {
@@ -152,7 +144,6 @@ header {
   align-items: center;
 }
 
-<<<<<<< HEAD
 .divBusca{
   background-color:#E0EEEE;
   border:solid 1px #87D6CC;
@@ -191,32 +182,3 @@ header {
  align-items: center;
  padding-left: 80px;
 }
-=======
-#divBusca {
-  background-color: #E0EEEE;
-  border: 0.125rem solid #5F9EA0;
-  border-radius: 0.625rem;
-  width: 15.625rem;
-  height: 2.0625rem;
-}
-
-#txtBusca {
-  float: left;
-  background-color: transparent;
-  border-radius: 0.625rem;
-  padding-left: 0.3125rem;
-  font-size: 0.9375rem;
-  border: none;
-  height: 2rem;
-  width: 15.5rem;
-}
-
-#btnBusca {
-  border: none;
-  height: 2rem;
-  border-radius: 0.625rem;
-  width: 15.625rem;
-  font-weight: bold;
-  background: #5F9EA0;
-}
->>>>>>> d5868ea55a2aa6fe42238f03842da34bc0d63477
