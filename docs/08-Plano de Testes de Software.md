@@ -5,16 +5,15 @@
 
 
 ## Teste de acesso as informações para contato dos órgãos de saúde (CT-02)
-### Objetivo do Teste:
-- Acessar a página que possui os contatos dos órgãos de saúde através dos links no header
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t15-e1-proj-web-t15-time5-easymed/assets/112480812/b3ae1b53-64ca-494d-8511-f0a272d29f24)
+
 
 ## Teste da Barra de Pesquisa de medicamentos na página de Interações (CT-03)
-### Objetivo do Teste:
-- Digitar um medicamento na barra de pesquisa
-- Direcionar o usuário para a página de Interações
-- Apresentar as informações sobre o medicamento pesquisado
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t15-e1-proj-web-t15-time5-easymed/assets/112480812/e958505f-4651-4505-852b-d82b7359c83a)
+
 
 ## Teste da criação de Rotina Medicamentosa (PÁGINA AINDA INCOMPLETA!) (CT-04)
-### Objetivo do Teste:
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t15-e1-proj-web-t15-time5-easymed/assets/112480812/27768ad3-02bb-4801-a6fb-d38ea9baacb7)
+
 
 
