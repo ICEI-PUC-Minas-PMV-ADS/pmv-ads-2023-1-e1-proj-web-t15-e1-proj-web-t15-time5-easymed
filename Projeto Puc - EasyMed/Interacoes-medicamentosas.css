@@ -77,11 +77,6 @@ header {
   transition: transform 0.5s;
 }
 
-.navigation a:hover::after {
-  transform-origin: left;
-  transform: scaleX(1);
-}
-
 .navigation .btnLogin-popup:hover {
   background: white;
   color: #87D6CC;
