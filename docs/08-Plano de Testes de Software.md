@@ -12,7 +12,7 @@
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t15-e1-proj-web-t15-time5-easymed/assets/112480812/e958505f-4651-4505-852b-d82b7359c83a)
 
 
-## Teste da criação de Rotina Medicamentosa (PÁGINA AINDA INCOMPLETA!) (CT-04)
+## Teste da criação de Rotina Medicamentosa (CT-04)
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t15-e1-proj-web-t15-time5-easymed/assets/112480812/27768ad3-02bb-4801-a6fb-d38ea9baacb7)
 
 
