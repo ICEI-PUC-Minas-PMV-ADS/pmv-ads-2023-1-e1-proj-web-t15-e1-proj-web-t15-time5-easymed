@@ -12,68 +12,82 @@
 
 <body>
   <header>
-    <img class="logo" src="./img/LogoDefinitivoEasyMed.png"></img>
+    <h2 class="logo">Logo</h2>
     <nav class="navigation">
       <a href="Index.html">Início</a>
       <a href="Interacoes-medicamentosas.html">Interações Medicamentosas</a>
-      <a href="Rotina-medicamentosa.html">Rotina</a>
+      <a href="Rotina-medicamentosa.html">Rotina Medicamentosas</a>
       <a href="Orgaos-de-saude.html">Orgãos de Saúde</a>
-      <button class="btnLogin-popup">Login</button>
+      <a href="Login.html">
+        <button class="btnLogin-popup">Login</button></a>
     </nav>
   </header>
 
-  <main class="conteudo">
-    <section class="conteudo-principal">
-      <div class="divBusca" id="divBusca">
-        <input class="txtBusca" type="text" id="txtBusca" placeholder="Digite aqui o seu medicamento" />
-        <button class="btn-busca" id="btnBusca" onclick="Buscar()">Buscar</button>
+  <body>
+    <header>
+      <img class="logo" src="./img/LogoDefinitivoEasyMed.png"></img>
+      <nav class="navigation">
+        <a href="Index.html">Início</a>
+        <a href="Interacoes-medicamentosas.html">Interações Medicamentosas</a>
+        <a href="Rotina-medicamentosa.html">Rotina</a>
+        <a href="Orgaos-de-saude.html">Orgãos de Saúde</a>
+        <button class="btnLogin-popup">Login</button>
+      </nav>
+    </header>
+
+    <main class="conteudo">
+      <section class="conteudo-principal">
+        <div class="divBusca" id="divBusca">
+          <input class="txtBusca" type="text" id="txtBusca" placeholder="Digite aqui o seu medicamento" />
+          <button class="btn-busca" id="btnBusca" onclick="Buscar()">Buscar</button>
+        </div>
+      </section>
+
+      <div class="container">
+        <div>
+          <h1 id="titulo-medicamento"></h1>
+          <p id="descricao-medicamento"></p>
+        </div>
+        <div>
+          <img class="img-medicamentos" alt="medicamentos" src="./img/img-interacoes.jpg" id="img-medicamento" />
+        </div>
       </div>
-    </section>
+    </main>
 
-    <div class="container">
-      <div>
-        <h1 id="titulo-medicamento"></h1>
-        <p id="descricao-medicamento"></p>
-      </div>
-      <div>
-        <img class="img-medicamentos" alt="medicamentos" src="./img/img-interacoes.jpg" id="img-medicamento" />
-      </div>
-    </div>
-  </main>
+    <footer class="rodape">
+      <p>
+        Os criadores do EasyMed nao se responsabilizam por prescricões ou
+        alteracoes na medicacao utilizada, o sistema apenas ajuda na organizacao
+        e verificacao de seguranca da terapia medicamentosa!
+      </p>
+    </footer>
+    <script src="dbMedicamento.js"></script>
+    <script>
+      //acrescentar id
+      function Buscar() {
+        console.log(db)
+        var buscaNomeMedicamento = document.querySelector('#txtBusca').value;
+        var medicamentos = db.medicamentos.filter(medicamento => medicamento.titulo.toLowerCase().startsWith(buscaNomeMedicamento.toLowerCase()));
 
-  <footer class="rodape">
-    <p>
-      Os criadores do EasyMed nao se responsabilizam por prescricões ou
-      alteracoes na medicacao utilizada, o sistema apenas ajuda na organizacao
-      e verificacao de seguranca da terapia medicamentosa!
-    </p>
-  </footer>
-  <script src="dbMedicamento.js"></script>
-  <script>
-    //acrescentar id
-    function Buscar() {
-      console.log(db)
-      var buscaNomeMedicamento = document.querySelector('#txtBusca').value;
-      var medicamentos = db.medicamentos.filter(medicamento => medicamento.titulo.toLowerCase().startsWith(buscaNomeMedicamento.toLowerCase()));
+        if (medicamentos.length > 0) {
+          var nomeMedicamento = medicamentos[0].titulo;
+          var descricaoMedicamento = medicamentos[0].descricao;
+          var imgMedicamento = medicamentos[0].src;
 
-      if (medicamentos.length > 0) {
-        var nomeMedicamento = medicamentos[0].titulo;
-        var descricaoMedicamento = medicamentos[0].descricao;
-        var imgMedicamento = medicamentos[0].src;
+          console.log(medicamentos);
+          console.log(nomeMedicamento);
+          console.log(descricaoMedicamento);
+          console.log(imgMedicamento);
 
-        console.log(medicamentos);
-        console.log(nomeMedicamento);
-        console.log(descricaoMedicamento);
-        console.log(imgMedicamento);
-
-        document.querySelector('#titulo-medicamento').textContent = nomeMedicamento;
-        document.querySelector('#descricao-medicamento').textContent = descricaoMedicamento;
-        document.querySelector('#img-medicamento').src = imgMedicamento;
-      } else {
-        console.log("Não foi possível encontrar o medicamento");
+          document.querySelector('#titulo-medicamento').textContent = nomeMedicamento;
+          document.querySelector('#descricao-medicamento').textContent = descricaoMedicamento;
+          document.querySelector('#img-medicamento').src = imgMedicamento;
+        } else {
+          console.log("Não foi possível encontrar o medicamento");
+        }
       }
-    }
-  </script>
-</body>
+    </script>
+    <script src="Login.js"></script>
+  </body>
 
 </html>

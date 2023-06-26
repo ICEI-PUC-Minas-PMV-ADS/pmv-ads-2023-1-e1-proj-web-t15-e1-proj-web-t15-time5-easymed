@@ -131,3 +131,25 @@ window.addEventListener('load', function() {
       passwordInput.value = localStorage.getItem('rememberedPassword');
     }
 });
+
+//Voltar a tela de login caso não esteja logado
+if (!usuarioCorrente.login) {
+    window.location.href = Login.html;
+}
+
+function initPage() {
+
+    // Associa a função de logout ao botão
+    document.getElementById('loginbtn').addEventListener('click', logoutUser);
+
+    // Informa o nome do usuário logado
+    document.getElementById('username').innerHTML = usuarioCorrente.nome;
+
+    // Lista os usuários 
+    exibeUsuarios ();
+    
+}
+
+// Associa ao evento de carga da página a função para verificar se o usuário está logado
+window.addEventListener('load', initPage);
+
