@@ -43,7 +43,7 @@ O EasyMed é um sistema de gerenciamento de Rotina Medicamentosa, que busca perm
 
 # Hospedagem
 
-* Insira o endereço eletrônico público de acesso ao conteúdo publicado. 
+* [Insira o endereço eletrônico público de acesso ao conteúdo publicado. ](https://replit.com/@PedroHenriq2164/EasyMed?v=1)
 
 # Armazenamento do Código-Fonte
 
