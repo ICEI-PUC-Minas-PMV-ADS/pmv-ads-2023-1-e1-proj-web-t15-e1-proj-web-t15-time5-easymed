@@ -25,12 +25,11 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 99;
-  }
+}
 
 .logo {
-    font-size: 2rem;
-    color: white;
-    user-select: none;
+    width: 11rem;
+    height: 5rem;
 }
 
 .navigation a {

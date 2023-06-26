@@ -1,71 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Uma nova forma de organizar seus medicamentos, com segurança e comodidade"
-    />
-    <link rel="stylesheet" type="text/css" href="Rotina-medicamentosa.css" />
-    <title>EasyMed - Saúde e segurança, lado a lado</title>
-  </head>
 
-  <body>
-    <header>
-      <h2 class="logo">Logo</h2>
-      <nav class="navigation">
-        <a href="Index.html">Início</a>
-        <a href="Interacoes-medicamentosas.html">Interações Medicamentosas</a>
-        <a href="Rotina-medicamentosa.html">Rotina</a>
-        <a href="Orgaos-de-saude.html">Orgãos de Saúde</a>
-        <button class="btnLogin-popup">Login</button>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Uma nova forma de organizar seus medicamentos, com segurança e comodidade" />
+  <link rel="stylesheet" type="text/css" href="Rotina-medicamentosa.css" />
+  <title>EasyMed - Saúde e segurança, lado a lado</title>
+</head>
 
-    <div class="content">
-      <div class="profile">
-        <img src="./img/imgavatar.png" alt="Foto de perfil" />
-        <h2>Pedro Henrique</h2>
-        <div class="info">
-          <p>Idade: 25 anos</p>
-          <p>Sexo: Masculino</p>
-          <p>Peso: 70 kg</p>
-        </div>
-      </div>
+<body>
+  <header>
+    <img class="logo" src="./img/LogoDefinitivoEasyMed.png"></img>
+    <nav class="navigation">
+      <a href="Index.html">Início</a>
+      <a href="Interacoes-medicamentosas.html">Interações Medicamentosas</a>
+      <a href="Rotina-medicamentosa.html">Rotina</a>
+      <a href="Orgaos-de-saude.html">Orgãos de Saúde</a>
+      <button class="btnLogin-popup">Login</button>
+    </nav>
+  </header>
 
-      <div class="divider"></div>
-
-      <div class="conteudo-secundário">
-        <div class="section">
-          <h3>Ibuprofeno</h3>
-          <p>Tomar 2 comprimidos de 12 em 12 horas</p>
-          <div class="buttons">
-            <button class="cancel-button">Cancelar</button>
-            <button class="delete-button">Deletar</button>
-          </div>
-        </div>
-
-        <div class="divider2"></div>
-
-        <div class="section">
-          <h3>Dipirona</h3>
-          <p>Tomar 1 comprimido de 8 em 8 horas</p>
-          <div class="buttons">
-            <button class="cancel-button">Cancelar</button>
-            <button class="delete-button">Deletar</button>
-          </div>
-        </div>
+  <div class="content">
+    <div class="profile">
+      <img src="./img/imgavatar.png" alt="Foto de perfil" />
+      <h2>Pedro Henrique</h2>
+      <div class="info">
+        <p>Idade: 25 anos</p>
+        <p>Sexo: Masculino</p>
+        <p>Peso: 70 kg</p>
       </div>
     </div>
 
-    <footer class="rodape">
-      <p>
-        Os criadores do EasyMed não se responsabilizam por prescrições ou
-        alterações na medicação utilizada, o sistema apenas ajuda na organização
-        e verificação de segurança da terapia medicamentosa!
-      </p>
-    </footer>
-  </body>
+    <div class="divider"></div>
+
+    <div class="rotina">
+      <label class="selecao-rotina" for="medicamentoSelect">Medicamento:</label>
+      <select class="select-rotina" id="medicamentoSelect">
+        <option value="">Selecione...</option>
+        <option value="Ibuprofeno">Ibuprofeno</option>
+        <option value="Heparina">Heparina</option>
+      </select>
+
+      <label class="posologia-rotina" for="informacoes">Posologia:</label>
+      <input class="input-posologia-rotina" type="text" id="informacoes">
+
+      <button class="btn-rotina" onclick="adicionarMedicamento()">Adicionar Medicamento</button>
+
+      <h2 class="lista-rotina">Rotina:</h2>
+      <div class="lista-rotina-item" id="listaMedicamentos"></div>
+    </div>
+  </div>
+
+  <footer class="rodape">
+    <p>
+      Os criadores do EasyMed não se responsabilizam por prescrições ou
+      alterações na medicação utilizada, o sistema apenas ajuda na organização
+      e verificação de segurança da terapia medicamentosa!
+    </p>
+  </footer>
+
+  <script src="dbMedicamento.js"></script>
+  <script>
+
+    var medicamentosSelecionados = {};
+
+    function exibirDetalhesMedicamentos() {
+      verificarMedicamentos();
+
+      var listaMedicamentos = document.getElementById("listaMedicamentos");
+      listaMedicamentos.innerHTML = "";
+
+      for (var titulo in medicamentosSelecionados) {
+        if (medicamentosSelecionados.hasOwnProperty(titulo)) {
+          var medicamento = db.medicamentos.find(function (med) {
+            return med.titulo === titulo;
+          });
+
+          if (medicamento) {
+            var tituloElement = document.createElement("h3");
+            tituloElement.textContent = medicamento.titulo;
+
+            var idElement = document.createElement("input");
+            idElement.type = "hidden";
+            idElement.name = "medicamento_id";
+            idElement.value = medicamento.id;
+
+            var informacoesElement = document.createElement("p");
+            informacoesElement.textContent = medicamentosSelecionados[titulo];
+
+            listaMedicamentos.appendChild(tituloElement);
+            listaMedicamentos.appendChild(idElement);
+            listaMedicamentos.appendChild(informacoesElement);
+          }
+        }
+      }
+    }
+
+    function adicionarMedicamento() {
+      var medicamentoSelect = document.getElementById("medicamentoSelect");
+      var informacoesInput = document.getElementById("informacoes");
+
+      var tituloSelecionado = medicamentoSelect.value;
+      var informacoes = informacoesInput.value;
+
+      if (tituloSelecionado && informacoes) {
+        medicamentosSelecionados[tituloSelecionado] = informacoes;
+
+        informacoesInput.value = "";
+
+        exibirDetalhesMedicamentos();
+      }
+    }
+
+    function verificarMedicamentos() {
+      var medicamento1Presente = false;
+      var medicamento2Presente = false;
+
+      for (var titulo in medicamentosSelecionados) {
+        if (medicamentosSelecionados.hasOwnProperty(titulo)) {
+          var medicamento = db.medicamentos.find(function (med) {
+            return med.titulo === titulo;
+          });
+
+          if (medicamento) {
+            if (medicamento.id === 1) {
+              medicamento1Presente = true;
+            } else if (medicamento.id === 2) {
+              medicamento2Presente = true;
+            }
+          }
+        }
+      }
+      if (medicamento1Presente && medicamento2Presente) {
+        alert("O Ibuprofeno e a Heparina possuem uma ou mais interações medicamentosas de importância clínica, consulte seu médico!");
+      }
+    }
+
+  </script>
+</body>
+
 </html>

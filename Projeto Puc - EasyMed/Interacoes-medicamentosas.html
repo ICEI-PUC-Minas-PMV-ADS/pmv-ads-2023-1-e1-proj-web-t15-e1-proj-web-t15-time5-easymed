@@ -1,133 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Uma nova forma de organizar seus medicamentos, com segurança e comodidade"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="Interacoes-medicamentosas.css"
-    />
-    <title>EasyMed - Saúde e segurança, lado a lado</title>
-  </head>
 
-  <body>
-    <header>
-      <h2 class="logo">Logo</h2>
-      <nav class="navigation">
-        <a href="Index.html">Início</a>
-        <a href="Interacoes-medicamentosas.html">Interações Medicamentosas</a>
-        <a href="Rotina-medicamentosa.html">Rotina Medicamentosas</a>
-        <a href="Orgaos-de-saude.html">Orgãos de Saúde</a>
-        <button class="btnLogin-popup">Login</button>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Uma nova forma de organizar seus medicamentos, com segurança e comodidade" />
+  <link rel="stylesheet" type="text/css" href="Interacoes-medicamentosas.css" />
+  <title>EasyMed - Saúde e segurança, lado a lado</title>
+</head>
 
-    <main class="conteudo">
-      <section class="conteudo-principal">
-        <div class="divBusca" id="divBusca">
-          <input
-            class="txtBusca"
-            type="text"
-            id="txtBusca"
-            placeholder="Digite aqui o seu medicamento"
-          />
-          <button class="btn-busca" id="btnBusca" onclick="Buscar()">Buscar</button>
-        </div>
-      </section>
+<body>
+  <header>
+    <img class="logo" src="./img/LogoDefinitivoEasyMed.png"></img>
+    <nav class="navigation">
+      <a href="Index.html">Início</a>
+      <a href="Interacoes-medicamentosas.html">Interações Medicamentosas</a>
+      <a href="Rotina-medicamentosa.html">Rotina</a>
+      <a href="Orgaos-de-saude.html">Orgãos de Saúde</a>
+      <button class="btnLogin-popup">Login</button>
+    </nav>
+  </header>
 
-      <div class="container">
-        <div>
-          <h1 id="titulo-medicamento"></h1>
-          <p id="descricao-medicamento"></p>
-        </div>
-        <div>
-          <img
-            class="img-medicamentos"
-            alt="medicamentos"
-            src="./img/img-interacoes.jpg" 
-            id="img-medicamento"
-          />
-        </div>
+  <main class="conteudo">
+    <section class="conteudo-principal">
+      <div class="divBusca" id="divBusca">
+        <input class="txtBusca" type="text" id="txtBusca" placeholder="Digite aqui o seu medicamento" />
+        <button class="btn-busca" id="btnBusca" onclick="Buscar()">Buscar</button>
       </div>
-    </main>
+    </section>
 
-    <footer class="rodape">
-      <p>
-        Os criadores do EasyMed nao se responsabilizam por prescricões ou
-        alteracoes na medicacao utilizada, o sistema apenas ajuda na organizacao
-        e verificacao de seguranca da terapia medicamentosa!
-      </p>
-    </footer>
-    <script>  
+    <div class="container">
+      <div>
+        <h1 id="titulo-medicamento"></h1>
+        <p id="descricao-medicamento"></p>
+      </div>
+      <div>
+        <img class="img-medicamentos" alt="medicamentos" src="./img/img-interacoes.jpg" id="img-medicamento" />
+      </div>
+    </div>
+  </main>
 
-    var db = {
-    medicamentos: [
-        {
-            titulo: 'Ibuprofeno',
-            descricao: 'O ibuprofeno pode aumentar os efeitos dos anticoagulantes orais(heparina), a concentração sanguínea de lítio e a atividade antiagregante plaquetária, desaconselhando-se, portanto, a administração simultânea de ibuprofeno e tais substâncias.',
-            categoria: 'medicamentos',
-            src: './img/ibuprofeno.jpg'
-        },
-        {
-            titulo: 'Heparina',
-            descricao: 'A diminuição do efeito da heparina pode ocorrer em casos de administração concomitante de anti-histamínicos, digitálicos, tetraciclinas e em relação aos abusos de administração de nitroglicerina como também de nicotina.',
-            categoria: 'medicamentos',
-            src: './img/heparina.jpg'
-        },
-        {
-            titulo: 'Clavulin',
-            descricao: 'A interação entre antibióticos e analgésicos não é grave, mas um pode anular o efeito do outro, ou, no pior dos casos, de ambos os medicamentos. Antibióticos tomados por via oral, quando associados a remédios para colesterol, aumentam os riscos de danos aos rins.',
-            categoria: 'medicamentos',
-            src: './img/clavulin.jpg'
-        },
-        {
-            titulo: 'Desogestrel',
-            descricao: 'Podem ocorrer interações com medicamentos ou produtos fitoterápicos indutores de enzimas microssomais, especificamente enzimas do citocromo P450 (CYP), que podem resultar em aumento da depuração, reduzindo as concentrações plasmáticas dos hormônios sexuais e podem diminuir a eficácia de anticoncepcionais orais, incluindo Desogestrel. Esses produtos incluem fenitoína, fenobarbital, primidona, bosentana, carbamazepina, rifampicina; e possivelmente também oxcarbazepina, rifabutina, topiramato, felbamato, griseofulvina, alguns inibidores da protease do HIV (por exemplo, ritonavir, nelfinavir) e inibidores não-nucleosídeos da transcriptase reversa (por exemplo, efavirenz), e o produto fitoterápico erva de São João.',
-            categoria: 'medicamentos',
-            src: './img/desogestrel.jpg'
-        },
-        {
-            titulo: 'Varfarina',
-            descricao: 'A atividade da varfarina pode ser potencializada por esteróides anabólicos como: etilestranol, metandrostenolona, (noretrandolona), amiodarona, amitriptilina/nortriptilina, azapropazona, aztreonam, benzafibrato, cefamandol, cloranfenicol, hidrato de coral, cimetidina, ciprofloxacino, clofibrato, cotrimoxazol, danazol, destropropoxifeno, destrotiroxina, dipiridamol, eritromicina, neomicina, feprazona, fluconazol, glucagon, metronidazol, miconazol, oxifenilbutazona, fenformina, fenilbutazona, feniramidol, quinidina, salicilatos, tolbutamida, sulfonamidas, outros analgésicos antiinflamatórios, cetoconazol, ácido nalidíxico, norfloxacino, tetraciclinas e outros antibióticos de largo espectro, alopurinol, dissulfiram, metilfenidato, paracetamol, drogas para tratamento de disfunções da tireóide e qualquer droga potencialmente hepatotóxica.',
-            categoria: 'medicamentos',
-            src: './img/varfarina.png'
-        },
-        {
-            titulo: 'Paracetamol',
-            descricao: 'Não se recomenda a ingestão de paracetamol com altas doses de barbitúricos, carbamazepina, hidantoína, rifampicina, sulfimpirazona. Pode ocorrer aumento do risco de sangramento no uso prolongado de paracetamol concomitantemente com medicamentos anticoagulantes como a varfarina.',
-            categoria: 'medicamentos',
-            src: './img/paracetamol.jpg'
-        },
-    ]
-}
-function Buscar() {
-  var buscaNomeMedicamento = document.querySelector('#txtBusca').value;
-  var medicamentos = db.medicamentos.filter(medicamento => medicamento.titulo.toLowerCase().startsWith(buscaNomeMedicamento.toLowerCase()));
+  <footer class="rodape">
+    <p>
+      Os criadores do EasyMed nao se responsabilizam por prescricões ou
+      alteracoes na medicacao utilizada, o sistema apenas ajuda na organizacao
+      e verificacao de seguranca da terapia medicamentosa!
+    </p>
+  </footer>
+  <script src="dbMedicamento.js"></script>
+  <script>
+    //acrescentar id
+    function Buscar() {
+      console.log(db)
+      var buscaNomeMedicamento = document.querySelector('#txtBusca').value;
+      var medicamentos = db.medicamentos.filter(medicamento => medicamento.titulo.toLowerCase().startsWith(buscaNomeMedicamento.toLowerCase()));
 
-  if (medicamentos.length > 0) {
-    var nomeMedicamento = medicamentos[0].titulo;
-    var descricaoMedicamento = medicamentos[0].descricao;
-    var imgMedicamento = medicamentos[0].src;
+      if (medicamentos.length > 0) {
+        var nomeMedicamento = medicamentos[0].titulo;
+        var descricaoMedicamento = medicamentos[0].descricao;
+        var imgMedicamento = medicamentos[0].src;
 
-    console.log(medicamentos);
-    console.log(nomeMedicamento);
-    console.log(descricaoMedicamento);
-    console.log(imgMedicamento);
+        console.log(medicamentos);
+        console.log(nomeMedicamento);
+        console.log(descricaoMedicamento);
+        console.log(imgMedicamento);
 
-    document.querySelector('#titulo-medicamento').textContent = nomeMedicamento;
-    document.querySelector('#descricao-medicamento').textContent = descricaoMedicamento;
-    document.querySelector('#img-medicamento').src = imgMedicamento;
-  } else {
-    console.log("Não foi possível encontrar o medicamento");
-  }
-}
-    </script>
-  </body>
-  
+        document.querySelector('#titulo-medicamento').textContent = nomeMedicamento;
+        document.querySelector('#descricao-medicamento').textContent = descricaoMedicamento;
+        document.querySelector('#img-medicamento').src = imgMedicamento;
+      } else {
+        console.log("Não foi possível encontrar o medicamento");
+      }
+    }
+  </script>
+</body>
+
 </html>

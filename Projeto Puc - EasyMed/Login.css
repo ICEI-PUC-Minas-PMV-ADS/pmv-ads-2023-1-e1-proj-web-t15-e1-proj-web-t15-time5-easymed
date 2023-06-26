@@ -37,11 +37,10 @@ header {
     align-items: center;
     z-index: 99;
 }
- 
+
 .logo {
-    font-size: 2rem;
-    color: white;
-    user-select: none;
+    width: 11rem;
+    height: 5rem;
 }
 
 .navigation a {
@@ -84,9 +83,9 @@ header {
 
 .navigation a:hover::after {
     transform-origin: left;
-    transform: scaleX(1);   
+    transform: scaleX(1);
 }
-     
+
 
 .navigation .btnLogin-popup:hover {
     background: white;
@@ -174,6 +173,7 @@ header {
     border-bottom: 0.125rem solid #162938;
     margin: 1.875rem 0;
 }
+
 .input-box label {
     position: absolute;
     top: 50%;
@@ -251,7 +251,7 @@ header {
     color: #162938;
     text-align: center;
     font-weight: 500;
-    margin: 1.5625rem 0 0.625rem; 
+    margin: 1.5625rem 0 0.625rem;
 }
 
 .login-register p a {

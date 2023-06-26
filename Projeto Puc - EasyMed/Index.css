@@ -37,10 +37,8 @@ header {
   }
   
   .logo {
-    font-size: 2em;
-    color: white;
-    user-select: none;
-  
+    width: 11rem;
+    height: 5rem;
   }
   
   .navigation a {
