@@ -13,7 +13,6 @@ O EasyMed é um sistema de gerenciamento de Rotina Medicamentosa, que busca perm
 * Pedro Henrique Correa
 * Bruno Alves da Fonseca
 * Lucas Oliveira Gonçalves
-* Bruno Sanchez
 
 ## Orientador
 
