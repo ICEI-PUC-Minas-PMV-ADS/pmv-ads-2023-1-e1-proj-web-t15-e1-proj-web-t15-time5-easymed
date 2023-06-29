@@ -4,45 +4,49 @@ const registerLink = document.querySelector('.register-link');
 const btnPopup = document.querySelector('.btnLogin-popup');
 const iconClose = document.querySelector('.icon-close');
 
-registerLink.addEventListener('click', ()=> {
+registerLink.addEventListener('click', () => {
     wrapper.classList.add('active');
 });
 
-loginLink.addEventListener('click', ()=> {
+loginLink.addEventListener('click', () => {
     wrapper.classList.remove('active');
 });
 
-btnPopup.addEventListener('click', ()=> {
+btnPopup.addEventListener('click', () => {
     wrapper.classList.add('active-popup');
 });
 
-iconClose.addEventListener('click', ()=> {
+iconClose.addEventListener('click', () => {
     wrapper.classList.remove('active-popup');
 });
 
 // BOTÕES DE OCULTAR E MOSTRAR SENHA
 let btn = document.querySelector('.iconeye')
 
-btn.addEventListener('click', ()=>{
+btn.addEventListener('click', () => {
     let inputSenha = document.querySelector('#loginPassword')
 
-    if(inputSenha.getAttribute('type') === 'password'){
-    inputSenha.setAttribute('type', 'text')}
+    if (inputSenha.getAttribute('type') === 'password') {
+        inputSenha.setAttribute('type', 'text')
+    }
     else {
-        inputSenha.setAttribute('type', 'password')}
-    
+        inputSenha.setAttribute('type', 'password')
+    }
+
 })
 
 let btn2 = document.querySelector('.iconeye2')
 
-btn2.addEventListener('click', ()=>{
+btn2.addEventListener('click', () => {
     let inputSenha = document.querySelector('#password')
 
-    if(inputSenha.getAttribute('type') === 'password'){
-    inputSenha.setAttribute('type', 'text')}
+    if (inputSenha.getAttribute('type') === 'password') {
+        inputSenha.setAttribute('type', 'text')
+    }
     else {
-        inputSenha.setAttribute('type', 'password')}
-    
+        inputSenha.setAttribute('type', 'password')
+    }
+
 })
 
 // LOGIN E REGISTRO DE USUÁRIOS 
@@ -53,13 +57,13 @@ if (usersJSON) {
 }
 
 const registerForm = document.getElementById('registerForm');
-registerForm.addEventListener('submit', function(event) {
+registerForm.addEventListener('submit', function (event) {
     event.preventDefault();
     const username = document.getElementById('username').value;
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
-    const userExists = users.some(function(user) {
+    const userExists = users.some(function (user) {
         return user.username === username;
     });
 
@@ -82,18 +86,19 @@ registerForm.addEventListener('submit', function(event) {
 });
 
 const loginForm = document.getElementById('loginForm');
-loginForm.addEventListener('submit', function(event) {
+loginForm.addEventListener('submit', function (event) {
     event.preventDefault();
 
     const email = document.getElementById('loginEmail').value;
     const password = document.getElementById('loginPassword').value;
 
-    const user = users.find(function(user) {
+    const user = users.find(function (user) {
         return user.email === email && user.password === password;
     });
 
     if (user) {
         showMessage('Bem vindo, ' + user.username + '!');
+        window.location.href = 'Index.html';
         loginForm.reset();
     } else {
         showMessage('Email ou senha inválidos.');
@@ -113,22 +118,22 @@ const loginbtn = document.getElementById('loginbtn');
 
 const storedPassword = localStorage.getItem('rememberedPassword');
 if (storedPassword) {
-  passwordInput.value = storedPassword;
-  rememberCheckbox.checked = true;
+    passwordInput.value = storedPassword;
+    rememberCheckbox.checked = true;
 }
 
-loginbtn.addEventListener('click', function() {
-  const password = passwordInput.value;
+loginbtn.addEventListener('click', function () {
+    const password = passwordInput.value;
 
-  if (rememberCheckbox.checked) {
-    localStorage.setItem('rememberedPassword', password);
-  } else {
-    localStorage.removeItem('rememberedPassword');
-  }
+    if (rememberCheckbox.checked) {
+        localStorage.setItem('rememberedPassword', password);
+    } else {
+        localStorage.removeItem('rememberedPassword');
+    }
 });
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
     if (rememberCheckbox.checked && passwordInput.value) {
-      passwordInput.value = localStorage.getItem('rememberedPassword');
+        passwordInput.value = localStorage.getItem('rememberedPassword');
     }
 });
 
@@ -146,8 +151,8 @@ function initPage() {
     document.getElementById('username').innerHTML = usuarioCorrente.nome;
 
     // Lista os usuários 
-    exibeUsuarios ();
-    
+    exibeUsuarios();
+
 }
 
 // Associa ao evento de carga da página a função para verificar se o usuário está logado
