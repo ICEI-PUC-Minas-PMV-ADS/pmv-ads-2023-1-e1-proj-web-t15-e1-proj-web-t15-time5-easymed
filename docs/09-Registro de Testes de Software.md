@@ -42,3 +42,21 @@ Teste 03 (CT-03):
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t15-e1-proj-web-t15-time5-easymed/assets/111026383/f30aa50c-3b08-491e-9719-d38ab8b9e824)
 
 Teste Concluído com Sucesso
+
+
+Teste 04 (CT-04)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t15-e1-proj-web-t15-time5-easymed/assets/111026383/44a2b622-7d4c-44bd-adca-dea8f24b8bb8)
+
+- Ao preencher o campo de MEDICAMENTO e POSOLOGIA, a rotina do paciente é criada
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t15-e1-proj-web-t15-time5-easymed/assets/111026383/f0f2bb35-909c-4ecf-9de3-7a5268107c86)
+
+- Caso o paciente selecione medicamentos que apresentem interações medicamentosas entre si, um alert vai avisa-lo sobre!
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t15-e1-proj-web-t15-time5-easymed/assets/111026383/b99142d9-8eec-4f27-b5e3-5cf5417336c8)
+
+Teste Concluído com Sucesso
+
+
+
