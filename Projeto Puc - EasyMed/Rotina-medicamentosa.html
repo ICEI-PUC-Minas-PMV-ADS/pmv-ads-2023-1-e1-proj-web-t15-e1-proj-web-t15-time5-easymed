@@ -12,147 +12,134 @@
 
 <body>
   <header>
-    <h2 class="logo">Logo</h2>
+    <img class="logo" src="./img/LogoDefinitivoEasyMed.png"></img>
     <nav class="navigation">
       <a href="Index.html">Início</a>
       <a href="Interacoes-medicamentosas.html">Interações Medicamentosas</a>
       <a href="Rotina-medicamentosa.html">Rotina</a>
       <a href="Orgaos-de-saude.html">Orgãos de Saúde</a>
-      <a href="Login.html">
-        <button class="btnLogin-popup">Login</button></a>
+      <button class="btnLogin-popup">Login</button>
     </nav>
   </header>
 
-  <body>
-    <header>
-      <img class="logo" src="./img/LogoDefinitivoEasyMed.png"></img>
-      <nav class="navigation">
-        <a href="Index.html">Início</a>
-        <a href="Interacoes-medicamentosas.html">Interações Medicamentosas</a>
-        <a href="Rotina-medicamentosa.html">Rotina</a>
-        <a href="Orgaos-de-saude.html">Orgãos de Saúde</a>
-        <button class="btnLogin-popup">Login</button>
-      </nav>
-    </header>
-
-    <div class="content">
-      <div class="profile">
-        <img src="./img/imgavatar.png" alt="Foto de perfil" />
-        <h2>Pedro Henrique</h2>
-        <div class="info">
-          <p>Idade: 25 anos</p>
-          <p>Sexo: Masculino</p>
-          <p>Peso: 70 kg</p>
-        </div>
-      </div>
-
-      <div class="divider"></div>
-
-      <div class="rotina">
-        <label class="selecao-rotina" for="medicamentoSelect">Medicamento:</label>
-        <select class="select-rotina" id="medicamentoSelect">
-          <option value="">Selecione...</option>
-          <option value="Ibuprofeno">Ibuprofeno</option>
-          <option value="Heparina">Heparina</option>
-        </select>
-
-        <label class="posologia-rotina" for="informacoes">Posologia:</label>
-        <input class="input-posologia-rotina" type="text" id="informacoes">
-
-        <button class="btn-rotina" onclick="adicionarMedicamento()">Adicionar Medicamento</button>
-
-        <h2 class="lista-rotina">Rotina:</h2>
-        <div class="lista-rotina-item" id="listaMedicamentos"></div>
+  <div class="content">
+    <div class="profile">
+      <img src="./img/imgavatar.png" alt="Foto de perfil" />
+      <h2>Pedro Henrique</h2>
+      <div class="info">
+        <p>Idade: 25 anos</p>
+        <p>Sexo: Masculino</p>
+        <p>Peso: 70 kg</p>
       </div>
     </div>
 
-    <footer class="rodape">
-      <p>
-        Os criadores do EasyMed não se responsabilizam por prescrições ou
-        alterações na medicação utilizada, o sistema apenas ajuda na organização
-        e verificação de segurança da terapia medicamentosa!
-      </p>
-    </footer>
+    <div class="divider"></div>
 
-    <script src="dbMedicamento.js"></script>
-    <script>
+    <div class="rotina">
+      <label class="selecao-rotina" for="medicamentoSelect">Medicamento:</label>
+      <select class="select-rotina" id="medicamentoSelect">
+        <option value="">Selecione...</option>
+        <option value="Ibuprofeno">Ibuprofeno</option>
+        <option value="Heparina">Heparina</option>
+      </select>
 
-      var medicamentosSelecionados = {};
+      <label class="posologia-rotina" for="informacoes">Posologia:</label>
+      <input class="input-posologia-rotina" type="text" id="informacoes">
 
-      function exibirDetalhesMedicamentos() {
-        verificarMedicamentos();
+      <button class="btn-rotina" onclick="adicionarMedicamento()">Adicionar Medicamento</button>
 
-        var listaMedicamentos = document.getElementById("listaMedicamentos");
-        listaMedicamentos.innerHTML = "";
+      <h2 class="lista-rotina">Rotina:</h2>
+      <div class="lista-rotina-item" id="listaMedicamentos"></div>
+    </div>
+  </div>
 
-        for (var titulo in medicamentosSelecionados) {
-          if (medicamentosSelecionados.hasOwnProperty(titulo)) {
-            var medicamento = db.medicamentos.find(function (med) {
-              return med.titulo === titulo;
-            });
+  <footer class="rodape">
+    <p>
+      Os criadores do EasyMed não se responsabilizam por prescrições ou
+      alterações na medicação utilizada, o sistema apenas ajuda na organização
+      e verificação de segurança da terapia medicamentosa!
+    </p>
+  </footer>
 
-            if (medicamento) {
-              var tituloElement = document.createElement("h3");
-              tituloElement.textContent = medicamento.titulo;
+  <script src="dbMedicamento.js"></script>
+  <script>
 
-              var idElement = document.createElement("input");
-              idElement.type = "hidden";
-              idElement.name = "medicamento_id";
-              idElement.value = medicamento.id;
+    var medicamentosSelecionados = {};
 
-              var informacoesElement = document.createElement("p");
-              informacoesElement.textContent = medicamentosSelecionados[titulo];
+    function exibirDetalhesMedicamentos() {
+      verificarMedicamentos();
 
-              listaMedicamentos.appendChild(tituloElement);
-              listaMedicamentos.appendChild(idElement);
-              listaMedicamentos.appendChild(informacoesElement);
+      var listaMedicamentos = document.getElementById("listaMedicamentos");
+      listaMedicamentos.innerHTML = "";
+
+      for (var titulo in medicamentosSelecionados) {
+        if (medicamentosSelecionados.hasOwnProperty(titulo)) {
+          var medicamento = db.medicamentos.find(function (med) {
+            return med.titulo === titulo;
+          });
+
+          if (medicamento) {
+            var tituloElement = document.createElement("h3");
+            tituloElement.textContent = medicamento.titulo;
+
+            var idElement = document.createElement("input");
+            idElement.type = "hidden";
+            idElement.name = "medicamento_id";
+            idElement.value = medicamento.id;
+
+            var informacoesElement = document.createElement("p");
+            informacoesElement.textContent = medicamentosSelecionados[titulo];
+
+            listaMedicamentos.appendChild(tituloElement);
+            listaMedicamentos.appendChild(idElement);
+            listaMedicamentos.appendChild(informacoesElement);
+          }
+        }
+      }
+    }
+
+    function adicionarMedicamento() {
+      var medicamentoSelect = document.getElementById("medicamentoSelect");
+      var informacoesInput = document.getElementById("informacoes");
+
+      var tituloSelecionado = medicamentoSelect.value;
+      var informacoes = informacoesInput.value;
+
+      if (tituloSelecionado && informacoes) {
+        medicamentosSelecionados[tituloSelecionado] = informacoes;
+
+        informacoesInput.value = "";
+
+        exibirDetalhesMedicamentos();
+      }
+    }
+
+    function verificarMedicamentos() {
+      var medicamento1Presente = false;
+      var medicamento2Presente = false;
+
+      for (var titulo in medicamentosSelecionados) {
+        if (medicamentosSelecionados.hasOwnProperty(titulo)) {
+          var medicamento = db.medicamentos.find(function (med) {
+            return med.titulo === titulo;
+          });
+
+          if (medicamento) {
+            if (medicamento.id === 1) {
+              medicamento1Presente = true;
+            } else if (medicamento.id === 2) {
+              medicamento2Presente = true;
             }
           }
         }
       }
-
-      function adicionarMedicamento() {
-        var medicamentoSelect = document.getElementById("medicamentoSelect");
-        var informacoesInput = document.getElementById("informacoes");
-
-        var tituloSelecionado = medicamentoSelect.value;
-        var informacoes = informacoesInput.value;
-
-        if (tituloSelecionado && informacoes) {
-          medicamentosSelecionados[tituloSelecionado] = informacoes;
-
-          informacoesInput.value = "";
-
-          exibirDetalhesMedicamentos();
-        }
+      if (medicamento1Presente && medicamento2Presente) {
+        alert("O Ibuprofeno e a Heparina possuem uma ou mais interações medicamentosas de importância clínica, consulte seu médico!");
       }
+    }
 
-      function verificarMedicamentos() {
-        var medicamento1Presente = false;
-        var medicamento2Presente = false;
-
-        for (var titulo in medicamentosSelecionados) {
-          if (medicamentosSelecionados.hasOwnProperty(titulo)) {
-            var medicamento = db.medicamentos.find(function (med) {
-              return med.titulo === titulo;
-            });
-
-            if (medicamento) {
-              if (medicamento.id === 1) {
-                medicamento1Presente = true;
-              } else if (medicamento.id === 2) {
-                medicamento2Presente = true;
-              }
-            }
-          }
-        }
-        if (medicamento1Presente && medicamento2Presente) {
-          alert("O Ibuprofeno e a Heparina possuem uma ou mais interações medicamentosas de importância clínica, consulte seu médico!");
-        }
-      }
-
-    </script>
-  </body>
+  </script>
+</body>
 
 </html>
 <footer class="rodape">
